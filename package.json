@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-hw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlenaYarova/nodejs-hw.git"
+  },
+  "keywords": [],
+  "author": "Olena Yarova <marineelen91@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlenaYarova/nodejs-hw/issues"
+  },
+  "homepage": "https://github.com/OlenaYarova/nodejs-hw#readme",
+  "description": ""
+}
