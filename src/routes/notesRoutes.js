@@ -23,7 +23,7 @@ router.post('/notes', createNote);
 router.delete('/notes/:noteId', deleteNote);
 
 //Маршрут для оновлення нотатки за ID
-router.put('/notes/:noteId', updateNote);
+router.patch('/notes/:noteId', updateNote);
 
 
 export default router;
