@@ -1,7 +1,7 @@
 
 import { Joi, Segments } from "celebrate";
 import { isValidObjectId } from 'mongoose';
-import { TAGS } from '../constans/tags.js';
+import { TAGS } from '../constants/tags.js';
 
 
 const ObjectIdValidator = (value, helpers) => {

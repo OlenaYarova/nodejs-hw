@@ -1,6 +1,6 @@
 
 import { model, Schema } from 'mongoose';
-import { TAGS } from '../constans/tags.js';
+import { TAGS } from '../constants/tags.js';
 
 const noteSchema = new Schema({
   title: {
