@@ -8,18 +8,19 @@ const userSchema = new Schema({
   },
   email: {
     type: String,
-    requirefd: true,
+    required: true,
     unique: true,
     trim: true,
   },
   password: {
     type: String,
     required: true,
+    minlength: 8,
   },
 },
   {
     timestamps: true,
-}
+  }
 );
 
 userSchema.pre('save', function () {
@@ -28,5 +29,12 @@ userSchema.pre('save', function () {
   }
 }
 );
+
+
+userSchema.methods.toJSON = function () {
+  const user = this.toObject();
+  delete user.password;
+  return user;
+};
 
 export const User = model('User', userSchema);
