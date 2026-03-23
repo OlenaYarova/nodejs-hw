@@ -81,7 +81,7 @@ export const updateNote = async (req, res) => {
   const updatedNote = await Note.findOneAndUpdate(
     { _id: noteId, userId: req.user._id },
     req.body,
-    { new: true }
+    { returnDocument: 'after' }
   );
   if (!updatedNote) {
     throw createHttpError(404, `Note with ID ${noteId} not found`);
